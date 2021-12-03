@@ -11,14 +11,21 @@
 }
 
 html {
+  height: 100%;
   font-size: 62.5%;
 }
 
+img {
+  display: block;
+}
+
 body {
-  height: 100vh;
+  height: 100%;
   font-size: 1.6rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#1f3756), to(#141539));
   background: linear-gradient(#1f3756, #141539);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 ul {
@@ -54,5 +61,9 @@ ul {
 .gb-bg-rock {
   background: -webkit-gradient(linear, left top, left bottom, from(#dc2e4e), to(#dd405d));
   background: linear-gradient(#dc2e4e, #dd405d);
+}
+
+.rules-btn {
+  border: 1px solid #fff;
 }
 /*# sourceMappingURL=App.css.map */

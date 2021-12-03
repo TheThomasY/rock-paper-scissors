@@ -1,6 +1,11 @@
 .game-board {
-  width: 85%;
+  width: 31.5rem;
   margin: 10rem auto 0 auto;
+  background-image: url('../../assets/images/bg-triangle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 50%;
 }
 
 .gb-top {
@@ -28,4 +33,13 @@
   top: 1.5rem;
   left: 1.5rem;
   background-color: #fff;
+}
+
+.gb-piece-icon {
+  width: 4.5rem;
+  height: 5.5rem;
+  position: absolute;
+  top: 50%;
+  left: 4.2rem;
+  transform: translateY(-50%);
 }

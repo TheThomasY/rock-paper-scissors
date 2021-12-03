@@ -1,0 +1,43 @@
+.rules-btn {
+  width: 12.5rem;
+  margin: 13.5rem auto 3.5rem auto;
+  padding: 1.2rem 3.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  letter-spacing: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.rules-full-page {
+  width: 100vw;
+  height: 100vh;
+  padding: 10rem 0 6.5rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rules-fp-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.rules-fp-close {
+  cursor: pointer;
+}
+/*# sourceMappingURL=Rules.css.map */

@@ -26,13 +26,20 @@ $rock-bg-2: hsl(349, 70%, 56%);
 }
 
 html {
+  height: 100%;
   font-size: 62.5%;
 }
 
+img {
+  display: block;
+}
+
 body {
-  height: 100vh;
+  height: 100%;
   font-size: 1.6rem;
   background: linear-gradient($bg-1, $bg-2);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 ul {
@@ -67,4 +74,9 @@ ul {
 
 .gb-bg-rock {
   background: linear-gradient($rock-bg-1, $rock-bg-2);
+}
+
+// Rules
+.rules-btn {
+  border: 1px solid #fff;
 }
