@@ -1,16 +1,18 @@
-// ### Primary
-// - Scissors Gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%)
-// - Paper Gradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%)
-// - Rock Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%)
-// - Lizard Gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%)
-// - Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%)
-
 $bg-1: hsl(214, 47%, 23%);
 $bg-2: hsl(237, 49%, 15%);
 $header-outline: hsl(217, 16%, 45%);
 
 $score-text: hsl(229, 64%, 46%);
 $dark-text: hsl(229, 25%, 31%);
+
+$paper-bg-1: hsl(230, 89%, 62%);
+$paper-bg-2: hsl(230, 89%, 65%);
+
+$scissors-bg-1: hsl(39, 89%, 49%);
+$scissors-bg-2: hsl(40, 84%, 53%);
+
+$rock-bg-1: hsl(349, 71%, 52%);
+$rock-bg-2: hsl(349, 70%, 56%);
 
 *,
 *::before,
@@ -52,4 +54,17 @@ ul {
   .score-tile-data {
     color: $dark-text;
   }
+}
+
+// Game Board
+.gb-bg-paper {
+  background: linear-gradient($paper-bg-1, $paper-bg-2);
+}
+
+.gb-bg-scissors {
+  background: linear-gradient($scissors-bg-1, $scissors-bg-2);
+}
+
+.gb-bg-rock {
+  background: linear-gradient($rock-bg-1, $rock-bg-2);
 }

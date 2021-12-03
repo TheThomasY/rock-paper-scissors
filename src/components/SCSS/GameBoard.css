@@ -1,0 +1,40 @@
+.game-board {
+  width: 85%;
+  margin: 10rem auto 0 auto;
+}
+
+.gb-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gb-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gb-piece-bg {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.gb-piece {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background-color: #fff;
+}
+/*# sourceMappingURL=GameBoard.css.map */
