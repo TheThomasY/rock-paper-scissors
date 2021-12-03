@@ -1,0 +1,30 @@
+.title-card {
+  width: 82%;
+  margin: 3rem auto 0 auto;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 8.5rem;
+  height: 5rem;
+}
+
+.score-tile {
+  padding: 1rem 2.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+
+  .score-tile-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .score-tile-data {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+}
