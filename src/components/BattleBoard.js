@@ -2,9 +2,9 @@ import './SCSS/BattleBoard.css';
 
 import CreateAnIcon from '../components/pieces/CreateAnIcon';
 
-export default function PlayedBoard() {
-  let playerPick = 'rock';
-  let housePick = '';
+export default function PlayedBoard(props) {
+  let playerPick = props.picks.player;
+  let housePick = props.picks.house;
 
   return (
     <div className='battle-board'>

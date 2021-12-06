@@ -7,8 +7,12 @@ import '../SCSS/pieces/CreateAnIcon.css';
 export default function PaperIcon(props) {
   let iconOuterColour = 'gb-piece-bg gb-bg-' + props.iconType;
 
+  const iconClickHandler = () => {
+    props.onPlayerPick(props.iconType);
+  };
+
   return (
-    <div className={iconOuterColour}>
+    <div className={iconOuterColour} onClick={iconClickHandler}>
       <div className='gb-piece'></div>
       {props.iconType === 'paper' && (
         <img className='gb-piece-icon' src={paperIcon} alt='Icon for paper' />
