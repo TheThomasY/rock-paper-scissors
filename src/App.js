@@ -13,9 +13,13 @@ function App() {
   });
   const [showRules, setShowRules] = useState(false);
 
+  const pickOptions = ['rock', 'paper', 'scissors'];
+
   const startBattle = (playerPick) => {
-    setPicks((prevPicks) => {
-      return { prevPicks, player: playerPick };
+    let housePick = pickOptions[Math.floor(Math.random() * 3)];
+    setPicks({
+      player: playerPick,
+      house: housePick,
     });
     setGameState('battle');
   };

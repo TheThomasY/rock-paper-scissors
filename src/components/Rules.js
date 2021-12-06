@@ -21,7 +21,7 @@ export default function Rules(props) {
           <img
             className='rules-fp-img'
             src={rulesImg}
-            alt='Image showing the rules of rock paper scissors'
+            alt='Rules of rock paper scissors'
           />
           <img
             onClick={toggleRulesHandler}
