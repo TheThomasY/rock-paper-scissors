@@ -1,6 +1,10 @@
+.rules-component {
+  padding-bottom: 3.5rem;
+}
+
 .rules-btn {
   width: 12.5rem;
-  margin: 13.5rem auto 3.5rem auto;
+  margin: 13.5rem auto 0 auto;
   padding: 1.2rem 3.5rem;
   border-radius: 1rem;
   text-align: center;
@@ -30,4 +34,10 @@
 
 .rules-fp-close {
   cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  .rules-btn {
+    margin: 0 3rem 0 auto;
+  }
 }

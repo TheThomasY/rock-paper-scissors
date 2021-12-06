@@ -13,8 +13,8 @@ function App() {
 
   return (
     <div>
-      <ScoreCard />
-      <GameBoard />
+      {!showRules && <ScoreCard />}
+      {!showRules && <GameBoard />}
       <Rules onToggleRules={toggleRules} showRules={showRules} />
     </div>
   );
