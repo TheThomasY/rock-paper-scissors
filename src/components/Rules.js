@@ -12,11 +12,10 @@ export default function Rules(props) {
 
   return (
     <div className='rules-component'>
-      {!showRules ? (
-        <div onClick={toggleRulesHandler} className='rules-btn'>
-          RULES
-        </div>
-      ) : (
+      <div onClick={toggleRulesHandler} className='rules-btn'>
+        RULES
+      </div>
+      {showRules && (
         <div className='rules-full-page'>
           <div className='rules-fp-title'>RULES</div>
           <img
