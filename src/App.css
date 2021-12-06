@@ -63,6 +63,10 @@ ul {
   background: linear-gradient(#dc2e4e, #dd405d);
 }
 
+.bb-empty {
+  background-color: #182243;
+}
+
 .rules-btn {
   border: 1px solid #fff;
 }

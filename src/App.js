@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ScoreCard from './components/ScoreCard';
 import GameBoard from './components/GameBoard';
+import BattleBoard from './components/BattleBoard';
 import Rules from './components/Rules';
 import './App.css';
 
@@ -15,6 +16,7 @@ function App() {
     <div>
       <ScoreCard />
       <GameBoard />
+      <BattleBoard />
       <Rules onToggleRules={toggleRules} showRules={showRules} />
     </div>
   );
