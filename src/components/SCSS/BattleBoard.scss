@@ -1,0 +1,27 @@
+.battle-board {
+  width: 31.5rem;
+  margin: 10rem auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bb-picked {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bb-empty {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.picked-by-label {
+  margin-top: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
