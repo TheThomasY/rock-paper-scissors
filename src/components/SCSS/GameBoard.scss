@@ -43,3 +43,28 @@
   left: 4.2rem;
   transform: translateY(-50%);
 }
+
+@media screen and (min-width: 900px) {
+  .game-board {
+    width: 50rem;
+    margin-top: 6.5rem;
+  }
+
+  .gb-piece-bg {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .gb-piece {
+    width: 15rem;
+    height: 15rem;
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+
+  .gb-piece-icon {
+    width: 6.5rem;
+    height: 8rem;
+    left: 6.5rem;
+  }
+}

@@ -11,7 +11,7 @@ export default function Rules(props) {
   };
 
   return (
-    <div>
+    <div className='rules-component'>
       {!showRules ? (
         <div onClick={toggleRulesHandler} className='rules-btn'>
           RULES

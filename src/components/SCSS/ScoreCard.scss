@@ -1,8 +1,9 @@
 .title-card {
   width: 82%;
+  max-width: 70rem;
   margin: 3rem auto 0 auto;
   padding: 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,7 +17,7 @@
 .score-tile {
   padding: 1rem 2.5rem;
   text-align: center;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 
   .score-tile-title {
     font-size: 1.3rem;
@@ -26,5 +27,28 @@
   .score-tile-data {
     font-size: 4rem;
     font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .title-card {
+    padding: 3rem;
+  }
+
+  .header-logo {
+    width: 17.5rem;
+    height: 10rem;
+  }
+
+  .score-tile {
+    padding: 1.5rem 5rem;
+
+    .score-tile-title {
+      font-size: 2rem;
+    }
+
+    .score-tile-data {
+      font-size: 6rem;
+    }
   }
 }
