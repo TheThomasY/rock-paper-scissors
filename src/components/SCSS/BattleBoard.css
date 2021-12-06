@@ -18,15 +18,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .bb-empty {
+  margin-bottom: 1.5rem;
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
@@ -37,5 +38,17 @@
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+}
+
+@media screen and (min-width: 900px) {
+  .battle-board {
+    width: 50rem;
+    margin-top: 6.5rem;
+  }
+  .bb-empty {
+    margin-bottom: 2.5rem;
+    width: 15rem;
+    height: 15rem;
+  }
 }
 /*# sourceMappingURL=BattleBoard.css.map */
