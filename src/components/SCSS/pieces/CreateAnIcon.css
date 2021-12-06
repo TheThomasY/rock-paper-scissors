@@ -3,6 +3,7 @@
   height: 13rem;
   border-radius: 50%;
   position: relative;
+  cursor: pointer;
 }
 
 .gb-piece {
