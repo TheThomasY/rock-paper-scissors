@@ -11,17 +11,31 @@ function App() {
     player: '',
     house: '',
   });
+  const [score, setScore] = useState(0);
   const [showRules, setShowRules] = useState(false);
 
   const pickOptions = ['rock', 'paper', 'scissors'];
 
   const startBattle = (playerPick) => {
-    let housePick = pickOptions[Math.floor(Math.random() * 3)];
-    setPicks({
-      player: playerPick,
-      house: housePick,
+    setPicks((prevPicks) => {
+      return { ...prevPicks, player: playerPick };
     });
     setGameState('battle');
+  };
+
+  const houseToPick = () => {
+    let housePick = pickOptions[Math.floor(Math.random() * 3)];
+    setPicks((prevPicks) => {
+      return { ...prevPicks, house: housePick };
+    });
+  };
+
+  const playAgain = () => {
+    setGameState('player-pick');
+    setPicks({
+      player: '',
+      house: '',
+    });
   };
 
   const toggleRules = () => {
@@ -30,9 +44,15 @@ function App() {
 
   return (
     <div>
-      <ScoreCard />
+      <ScoreCard score={score} />
       {gameState === 'player-pick' && <GameBoard onPlayerPick={startBattle} />}
-      {gameState === 'battle' && <BattleBoard picks={picks} />}
+      {gameState === 'battle' && (
+        <BattleBoard
+          picks={picks}
+          onHousePick={houseToPick}
+          onPlayAgain={playAgain}
+        />
+      )}
       <Rules onToggleRules={toggleRules} showRules={showRules} />
     </div>
   );
