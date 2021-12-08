@@ -1,9 +1,7 @@
 import './SCSS/ScoreCard.css';
 import logo from '../assets/images/logo.svg';
 
-export default function ScoreCard() {
-  let currentScore = 0;
-
+export default function ScoreCard(props) {
   return (
     <div>
       <div className='title-card'>
@@ -14,7 +12,7 @@ export default function ScoreCard() {
         />
         <div className='score-tile'>
           <div className='score-tile-title'>SCORE</div>
-          <div className='score-tile-data'>{currentScore}</div>
+          <div className='score-tile-data'>{props.score}</div>
         </div>
       </div>
     </div>
