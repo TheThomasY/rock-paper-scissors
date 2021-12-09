@@ -38,7 +38,7 @@
 
 @media screen and (min-width: 900px) {
   .title-card {
-    padding: 3rem;
+    padding: 1.5rem 3rem;
   }
   .header-logo {
     width: 17.5rem;
