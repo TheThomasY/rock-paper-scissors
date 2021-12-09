@@ -29,10 +29,10 @@ export default function PlayedBoard(props) {
     } else if (housePick !== '') {
       setGameResult('draw');
     }
-  });
+  }, [thisBeatsThat, playerPick, housePick]);
 
   const playAgainHandler = () => {
-    props.onPlayAgain();
+    props.onPlayAgain(gameResult);
   };
 
   return (
