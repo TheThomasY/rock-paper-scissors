@@ -30,7 +30,18 @@ function App() {
     });
   };
 
-  const playAgain = () => {
+  const scoreIncrease = () => {
+    setScore((prevScore) => {
+      return prevScore++;
+    });
+  };
+
+  const playAgain = (gameResult) => {
+    if (gameResult === 'win') {
+      setScore((prevScore) => {
+        return prevScore + 1;
+      });
+    }
     setGameState('player-pick');
     setPicks({
       player: '',
@@ -50,6 +61,7 @@ function App() {
         <BattleBoard
           picks={picks}
           onHousePick={houseToPick}
+          onPlayerWin={scoreIncrease}
           onPlayAgain={playAgain}
         />
       )}
