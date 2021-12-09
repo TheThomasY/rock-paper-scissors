@@ -7,8 +7,7 @@ export default function PlayedBoard(props) {
   const [gameResult, setGameResult] = useState('');
 
   let playerPick = props.picks.player;
-  // let housePick = props.picks.house;
-  let housePick = '';
+  let housePick = props.picks.house;
 
   const thisBeatsThat = {
     rock: 'scissors',
@@ -47,6 +46,12 @@ export default function PlayedBoard(props) {
           )}
           <div className='picked-by-label'>You Picked</div>
         </div>
+        <div className='result-div'>
+          <div className='result'>YOU {gameResult}</div>
+          <div onClick={playAgainHandler} className='play-again-btn'>
+            PLAY AGAIN
+          </div>
+        </div>
         <div className='bb-picked bb-house-picked'>
           {housePick === '' ? (
             <div className='bb-empty'></div>
@@ -55,10 +60,6 @@ export default function PlayedBoard(props) {
           )}
           <div className='picked-by-label'>The House Picked</div>
         </div>
-      </div>
-      <div className='result'>YOU {gameResult}</div>
-      <div onClick={playAgainHandler} className='play-again-btn'>
-        PLAY AGAIN
       </div>
     </div>
   );
