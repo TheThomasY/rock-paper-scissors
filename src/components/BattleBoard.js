@@ -7,7 +7,8 @@ export default function PlayedBoard(props) {
   const [gameResult, setGameResult] = useState('');
 
   let playerPick = props.picks.player;
-  let housePick = props.picks.house;
+  // let housePick = props.picks.house;
+  let housePick = '';
 
   const thisBeatsThat = {
     rock: 'scissors',
