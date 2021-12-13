@@ -25,6 +25,40 @@
   transform: translateY(-50%);
 }
 
+// Fade in animation
+@mixin fade-in($waitTime) {
+  animation: wait #{$waitTime}, fade-in 800ms #{$waitTime};
+}
+
+@keyframes wait {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bb-house-picked {
+  .gb-piece-bg {
+    @include fade-in('500ms');
+  }
+
+  .gb-piece-icon {
+    @include fade-in('700ms');
+  }
+}
+
+// Desktop styles
 @media screen and (min-width: 900px) {
   .gb-piece-bg {
     width: 20rem;

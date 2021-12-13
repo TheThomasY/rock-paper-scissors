@@ -26,6 +26,52 @@
           transform: translateY(-50%);
 }
 
+@-webkit-keyframes wait {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wait {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bb-house-picked .gb-piece-bg {
+  -webkit-animation: wait 500ms, fade-in 800ms 500ms;
+          animation: wait 500ms, fade-in 800ms 500ms;
+}
+
+.bb-house-picked .gb-piece-icon {
+  -webkit-animation: wait 700ms, fade-in 800ms 700ms;
+          animation: wait 700ms, fade-in 800ms 700ms;
+}
+
 @media screen and (min-width: 900px) {
   .gb-piece-bg {
     width: 20rem;

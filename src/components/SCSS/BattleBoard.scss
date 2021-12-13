@@ -12,13 +12,15 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
 }
 
 .bb-empty {
-  margin-bottom: 1.5rem;
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
+  position: absolute;
+  bottom: 5rem;
 }
 
 .picked-by-label {
@@ -50,6 +52,16 @@
   cursor: pointer;
 }
 
+// Animation for result
+@mixin fade-in-rules-($waitTime) {
+  animation: wait #{$waitTime}, fade-in 1000ms #{$waitTime};
+}
+
+.result-div {
+  @include fade-in-rules-('1500ms');
+}
+
+// Style for just mobile - hard to do mobile first
 @media screen and (max-width: 899px) {
   .result-div {
     position: absolute;
@@ -59,6 +71,7 @@
   }
 }
 
+// Styles for desktop
 @media screen and (min-width: 900px) {
   .battle-board {
     width: 68rem;
@@ -68,10 +81,9 @@
   }
 
   .bb-empty {
-    margin: 0;
-    margin-top: 3.5rem;
     width: 23rem;
     height: 23rem;
+    bottom: 4rem;
   }
 
   .bb-picked {
