@@ -2,8 +2,7 @@
 
 This app was built with React and styled with SCSS.
 
-It is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH). 
-
+It is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH).
 
 ## Links 🌟
 
@@ -11,10 +10,10 @@ It is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](htt
 
 ## Screenshots 📷
 
-<!-- <p float="left">
+<p float="left">
   <img src="./screenshots/screenshot-desktop.png">
   <img src="./screenshots/screenshot-mobile.png" width="300px">
-</p> -->
+</p>
 
 ## Built With 🛠
 
