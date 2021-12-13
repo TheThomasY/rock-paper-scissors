@@ -12,7 +12,7 @@ It is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](htt
 
 <p float="left">
   <img src="./screenshots/screenshot-desktop.png">
-  <img src="./screenshots/screenshot-mobile.png" width="300px">
+<!--   <img src="./screenshots/screenshot-mobile.png" width="300px"> -->
 </p>
 
 ## Built With 🛠
