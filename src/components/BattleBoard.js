@@ -16,10 +16,9 @@ export default function PlayedBoard(props) {
   };
 
   useEffect(() => {
-    if (housePick === '') {
-      props.onHousePick();
-    }
-  });
+    // On component mount, make house pick
+    props.onHousePick();
+  }, []);
 
   useEffect(() => {
     if (thisBeatsThat[playerPick] === housePick) {
@@ -29,7 +28,7 @@ export default function PlayedBoard(props) {
     } else if (housePick !== '') {
       setGameResult('draw');
     }
-  }, [thisBeatsThat, playerPick, housePick]);
+  }, [playerPick, housePick]);
 
   const playAgainHandler = () => {
     props.onPlayAgain(gameResult);
