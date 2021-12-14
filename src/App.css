@@ -20,6 +20,7 @@ img {
 }
 
 body {
+  padding-top: 3rem;
   height: 100%;
   font-size: 1.6rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#1f3756), to(#141539));

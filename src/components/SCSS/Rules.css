@@ -6,7 +6,7 @@
   width: 12.5rem;
   padding: 1.2rem 3.5rem;
   position: absolute;
-  bottom: 5rem;
+  bottom: 2vh;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -51,8 +51,7 @@
 
 @media screen and (min-width: 900px) {
   .rules-btn {
-    position: initial;
-    margin: 2rem 3rem 0 auto;
+    left: 90%;
   }
   .rules-full-page {
     width: 40rem;

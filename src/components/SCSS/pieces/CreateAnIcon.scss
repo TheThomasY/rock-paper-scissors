@@ -58,6 +58,13 @@
   }
 }
 
+// When on battle board
+.bb-picked {
+  .gb-piece-bg {
+    cursor: auto;
+  }
+}
+
 // Desktop styles
 @media screen and (min-width: 900px) {
   .gb-piece-bg {

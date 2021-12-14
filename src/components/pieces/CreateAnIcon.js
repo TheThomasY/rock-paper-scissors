@@ -8,7 +8,9 @@ export default function PaperIcon(props) {
   let iconOuterColour = 'gb-piece-bg gb-bg-' + props.iconType;
 
   const iconClickHandler = () => {
-    props.onPlayerPick(props.iconType);
+    if (props.gameState === 'player-pick') {
+      props.onPlayerPick(props.iconType);
+    }
   };
 
   return (

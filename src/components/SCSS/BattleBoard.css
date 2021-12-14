@@ -1,13 +1,12 @@
 .battle-board {
   width: 31.5rem;
-  margin: 10rem auto 0 auto;
+  margin: 9rem auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
 }
 
 .bb-picked {
@@ -44,7 +43,7 @@
 }
 
 .result {
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-weight: 700;
   color: #fff;
   text-align: center;
@@ -55,11 +54,12 @@
 
 .play-again-btn {
   width: 22rem;
-  margin: 2rem auto 0 auto;
-  padding: 1.5rem;
+  margin: 1rem auto 0 auto;
+  padding: 1rem;
   border-radius: 1rem;
   background-color: #fff;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.25rem;
   font-weight: 600;
   text-align: center;
   cursor: pointer;
@@ -73,7 +73,7 @@
 @media screen and (max-width: 899px) {
   .result-div {
     position: absolute;
-    bottom: -21rem;
+    bottom: 15vh;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);

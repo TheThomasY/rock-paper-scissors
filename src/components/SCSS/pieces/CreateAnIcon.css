@@ -72,6 +72,10 @@
           animation: wait 700ms, fade-in 800ms 700ms;
 }
 
+.bb-picked .gb-piece-bg {
+  cursor: auto;
+}
+
 @media screen and (min-width: 900px) {
   .gb-piece-bg {
     width: 20rem;
