@@ -56,10 +56,13 @@ function App() {
   return (
     <div>
       <ScoreCard score={score} />
-      {gameState === 'player-pick' && <GameBoard onPlayerPick={startBattle} />}
+      {gameState === 'player-pick' && (
+        <GameBoard onPlayerPick={startBattle} gameState={gameState} />
+      )}
       {gameState === 'battle' && (
         <BattleBoard
           picks={picks}
+          gameState={gameState}
           onHousePick={houseToPick}
           onPlayerWin={scoreIncrease}
           onPlayAgain={playAgain}
