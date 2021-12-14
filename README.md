@@ -22,7 +22,7 @@ It is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](htt
 
 ## Changelog
 
-- #[1.1] 14/12/21 Fix:
+- **[1.1] 14/12/21 Fix**:
 Fixed position issue with mobile devices with small height. Also fixed crash when user clicks on an icon whilst on the battle board.
 
 ## Future Updates 🎁
