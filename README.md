@@ -20,14 +20,15 @@ It is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](htt
 - React JS
 - SCSS
 
+## Future Updates 🎁
+
+- [ ] Add effect around winning circle
+- [ ] Add 3D effect to icon circles
+
 ## Changelog
 
 - **[1.1] 14/12/21 Fix**:
 Fixed position issue with mobile devices with small height. Also fixed crash when user clicks on an icon whilst on the battle board.
-
-## Future Updates 🎁
-
-- [ ] Add effect around winning circle
 
 ## Author 🧑
 
