@@ -17,7 +17,7 @@ It is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](htt
 
 ## Built With 🛠
 
-- React JS
+- React (create-react-app)
 - SCSS
 
 ## Future Updates 🎁
