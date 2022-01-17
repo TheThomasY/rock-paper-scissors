@@ -22,6 +22,8 @@ It is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](htt
 
 ## Future Updates 🎁
 
+- [ ] Fix Needed: Known styling errors on some mobile devices
+
 - [ ] Add effect around winning circle
 - [ ] Add 3D effect to icon circles
 
